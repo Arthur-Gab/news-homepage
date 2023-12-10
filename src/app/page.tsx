@@ -50,7 +50,9 @@ export default function Home() {
 						</div>
 					</aside>
 				</section>
-				<section></section>
+				<section>
+					
+				</section>
 			</main>
 		</>
 

@@ -40,8 +40,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-<!-- - Deploy on Vercel: []() -->
-- Live Site URL: [Add live site URL here](https://www.twitch.tv/a_gfer)
+- Deploy on Vercel: [Deploy on Vercel](https://news-homepage-nine-eta.vercel.app/)
+- Live Site URL: [Twitch.tv](https://www.twitch.tv/a_gfer)
 
 ## My process
 
@@ -55,7 +55,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## Author
 
-<!-- - Website - [Add your name here](https://www.your-site.com) -->
+- Website - [Deploy on Vercel](https://news-homepage-nine-eta.vercel.app/)
 - Linkedin [@art2354](https://www.linkedin.com/in/art2354/)
 - Github - [@Arthur-Gab](https://github.com/Arthur-Gab/)
 - Frontend Mentor - [@Arthur-Gab](https://www.frontendmentor.io/profile/Arthur-Gab)
