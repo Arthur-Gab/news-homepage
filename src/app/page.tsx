@@ -7,7 +7,7 @@ import clsx from 'clsx'
 export default function Home() {
 	return (
 		<>
-			<header>
+			<header className='fixed top-0 left-0 w-screen bg-neutral-grayish'>
 				<nav className="relative container mx-auto px-4 py-6 flex justify-between items-center max-w-7xl">
 					<Link href={'/'}>
 						<Image
@@ -20,7 +20,7 @@ export default function Home() {
 					<Navbar />
 				</nav>
 			</header>
-			<main>
+			<main className='mt-24'>
 				<section className='flex max-md:flex-col max-md:gap-12 container mx-auto px-4 md:gap-6 mb-12 max-w-7xl'>
 					<article className='flex-1'>
 						<Image src={'/image-web-3-desktop.jpg'} alt='The Bright Future of Web 3.0' width={1460} height={600} />
