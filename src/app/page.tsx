@@ -24,9 +24,9 @@ export default function Home() {
 				<section className='flex max-md:flex-col max-md:gap-12 container mx-auto px-4 md:gap-6 mb-12'>
 					<article className='flex-1'>
 						<Image src={'/image-web-3-desktop.jpg'} alt='The Bright Future of Web 3.0' width={1460} height={600} />
-						<div className='mt-4 flex gap-4 max-md:flex-col'>
-							<h1 className='text-neutral-very-dark-grayish text-5xl font-extrabold'>The Brigth Future of Web 3.0?</h1>
-							<div className='flex-col flex gap-6'>
+						<div className='mt-4 items-center flex gap-4 max-md:flex-col justify-between'>
+							<h1 className='text-neutral-very-dark-grayish text-5xl flex-1 font-extrabold'>The Brigth Future of Web 3.0?</h1>
+							<div className='flex-col flex gap-6 flex-1'>
 								<p className='text-neutral-dark-grayish'>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? </p>
 								<Link href={'#'} className={clsx(inter.className, 'w-fit px-8 py-4 bg-primary-red text-neutral-grayish font-bold font-mono tracking-[.3rem] hover:bg-neutral-very-dark-grayish')}>READ MORE</Link>
 							</div>
@@ -51,7 +51,7 @@ export default function Home() {
 					</aside>
 				</section>
 				<section>
-					
+
 				</section>
 			</main>
 		</>
