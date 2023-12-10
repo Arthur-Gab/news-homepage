@@ -11,6 +11,10 @@ const Navbar = () => {
         setNavbarOpen(!isNavbarOpen)
     }
 
+	const handlerNavBarClose = () => {
+		setNavbarOpen(false)
+	}
+
 	return (
 		<>
 			<button type="button" onClick={handlerNavbarOpenOrHide} className='hidden max-sm:block max-sm:absolute max-sm:right-4 p-4 max-sm:z-50' aria-label='Abrir menu hamburguer'>
@@ -26,7 +30,7 @@ const Navbar = () => {
 					<Link
 						href={'/'}
 						className={clsx("max-sm:text-black sm:text-neutral-dark-grayish hover:text-primary-red py-2 w-full block text-lg transition-opacity opacity-100", !isNavbarOpen && 'opacity-0')}
-                        onClick={handlerNavbarOpenOrHide}
+                        onClick={handlerNavBarClose}
 					>
 						Home
 					</Link>
@@ -35,7 +39,7 @@ const Navbar = () => {
 					<Link
 						href={'#'}
 						className={clsx("max-sm:text-black sm:text-neutral-dark-grayish hover:text-primary-red py-2 w-full block text-lg transition-opacity opacity-100", !isNavbarOpen && 'opacity-0')}
-                        onClick={handlerNavbarOpenOrHide}
+                        onClick={handlerNavBarClose}
 					>
 						New
 					</Link>
@@ -44,7 +48,7 @@ const Navbar = () => {
 					<Link
 						href={'#'}
 						className={clsx("max-sm:text-black sm:text-neutral-dark-grayish hover:text-primary-red py-2 w-full block text-lg transition-opacity opacity-100", !isNavbarOpen && 'opacity-0')}
-                        onClick={handlerNavbarOpenOrHide}
+                        onClick={handlerNavBarClose}
 					>
 						Popular
 					</Link>
@@ -53,7 +57,7 @@ const Navbar = () => {
 					<Link
 						href={'#'}
 						className={clsx("max-sm:text-black sm:text-neutral-dark-grayish hover:text-primary-red py-2 w-full block text-lg transition-opacity opacity-100", !isNavbarOpen && 'opacity-0')}
-                        onClick={handlerNavbarOpenOrHide}
+                        onClick={handlerNavBarClose}
 					>
 						Trending
 					</Link>
@@ -62,7 +66,7 @@ const Navbar = () => {
 					<Link
 						href={'#'}
 						className={clsx("max-sm:text-black sm:text-neutral-dark-grayish hover:text-primary-red py-2 w-full block text-lg transition-opacity opacity-100", !isNavbarOpen && 'opacity-0')}
-                        onClick={handlerNavbarOpenOrHide}
+                        onClick={handlerNavBarClose}
 					>
 						Categories
 					</Link>
