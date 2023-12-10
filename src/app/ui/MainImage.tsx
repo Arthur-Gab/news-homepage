@@ -1,25 +1,35 @@
 'use client'
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const MainImage = () => {
-    const [width, setWidth] = useState(0)
-    
-    const handleBodyWidth = () => {
-        setWidth(window.innerWidth)
-    }
+  const [isDesktop, setIsDesktop] = useState(false);
 
-    useEffect(() => {
-        window.addEventListener('resize', handleBodyWidth);
-        return () => {
-            window.removeEventListener('resize', handleBodyWidth);
-        }
-    },[])
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 1023);
+    };
 
-    
-    return (
-        width > 1023 ? (<Image src={'/image-web-3-desktop.jpg'} alt='The Bright Future of Web 3.0' width={1460} height={600} />) : 
-            (<Image src={'/image-web-3-mobile.jpg'} alt='The Bright Future of Web 3.0' width={686} height={600} />)
-    )
-}
+    // Set initial value
+    handleResize();
+
+    // Add event listener to update on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <Image
+      src={isDesktop ? '/image-web-3-desktop.jpg' : '/image-web-3-mobile.jpg'}
+      alt='The Bright Future of Web 3.0'
+      width={isDesktop ? 1460 : 686}
+      height={600}
+    />
+  );
+};
+
 export default MainImage;

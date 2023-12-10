@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<button type="button" onClick={handlerNavbarOpenOrHide} className='hidden max-sm:block max-sm:absolute max-sm:right-4 p-4 max-sm:z-50'>
+			<button type="button" onClick={handlerNavbarOpenOrHide} className='hidden max-sm:block max-sm:absolute max-sm:right-4 p-4 max-sm:z-50' aria-label='Abrir menu hamburguer'>
                 {
                     isNavbarOpen ? 
                     (<Image src='icon-menu-close.svg' alt='Menu Hamburguer' width="32" height="31" aria-hidden='true'/>) 
