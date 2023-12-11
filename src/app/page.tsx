@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from './ui/Navbar';
-import MainImage from './ui/MainImage';
+import HomeImage from './ui/HomeImage';
 import { inter } from './ui/fonts';
 import clsx from 'clsx'
 
@@ -25,7 +25,7 @@ export default function Home() {
 				<section className='flex max-md:flex-col max-md:gap-12 container mx-auto px-4 md:gap-6 mb-12 max-w-7xl'>
 					<article className='flex-1'>
 
-						<MainImage/>
+						<HomeImage/>
 
 						<div className='mt-4 items-center flex gap-4 max-md:flex-col justify-between'>
 							<h1 className='text-neutral-very-dark-grayish text-5xl xl:text-6xl flex-1 font-extrabold'>The Brigth Future of Web 3.0?</h1>

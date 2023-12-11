@@ -4,7 +4,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { useState } from 'react';   
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 	const [isNavbarOpen, setNavbarOpen] = useState(false);
 
     const handlerNavbarOpenOrHide = () => {
